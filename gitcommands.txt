@@ -1,0 +1,174 @@
+  133  mkdir gitrepo
+  134  ls
+  135  cd gitrepo
+  136  ls
+  137  git init
+  138  ls -lart
+  139  echo first line > readme.txt
+  140  cat readme.txt
+  141  git show
+  142  git status
+  143  git add readme.txt
+  144  git status
+  145  git show
+  146  git log
+  147  git commit -m first line
+  148  git status
+  149  git show
+  150  git log
+  151  echo second line >> readme.txt
+  152  cat readme.txt
+  153  git show
+  154  git status
+  155  git commit -am second line
+  156  git status
+  157  git show
+  158  git log
+  159  echo third line >>readme.txt
+  160  git status
+  161  git show
+  162  git commit -am third line
+  163  git show
+  164  git log
+  165  git reset --hard aad77cce4814246801cb251d352cc744020b2b38
+  166  git show
+  167  git status
+  168  git log
+  169  echo third line >>readme.txt
+  170  git commit -am third line
+  171  git show
+  172  git log
+  173  git revert aad77cce4814246801cb251d352cc744020b2b38
+  174  git show
+  175  vi readme.txt
+  176  git status
+  177  git commit -am removed second commit
+  178  git show
+  179  git log
+  180  git status aad77cce4814246801cb251d352cc744020b2b38
+  181  history
+  182  clear
+  183  cd gitrepo
+  184  ls
+  185  ls -ltr
+  186  echo first line > file.txt
+  187  git status
+  188  git add file.txt
+  189  git status
+  190  git commit -m first line
+  191  git show
+  192  git log
+  193  git log file.txt
+  194  echo second line >> file.txt
+  195  git commit -am seconf line
+  196  git show
+  197  git log file.txt
+  198  echo thrid line >> file.txt
+  199  git status
+  200  git commit -am thirdline
+  201  git status
+  202  git log file.txt
+  203  cat file.txt
+  204  git revert 8b89f19388aa696a793a4900cad944b29b5fcbb8
+  205  git log file.txt
+  206  clear
+  207  git log file.txt
+  208  git show
+  209  git status
+  210  vi file.txt
+  211  git add .
+  212  git commit -m removed send line
+  213  git show
+  214  git log file.txt
+  215  cat file.txt
+  216  git branch -l
+  217  clear
+  218  git branch google
+  219  git branch -l
+  220  git checkout google
+  221  git branch -l
+  222  git -l
+  223  ls
+  224  ls -l
+  225  ls
+  226  git checkout master
+  227  git checkout google
+  228  clear
+  229  git branch -l
+  230  ls
+  231  ls -l
+  232  echo google cod base >> google.txt
+  233  git status
+  234  git add .
+  235  git commit -m google code
+  236  git show
+  237  git log
+  238  show log
+  239  git log
+  240  clear
+  241  git log google.txt
+  242  ls -l
+  243  git checkout master
+  244  ls -l
+  245  ls
+  246  git branch -l
+  247  git diff google
+  248  git merge google
+  249  ls -l
+  250  git diff google
+  251  git log
+  252  clear
+  253  git branch -l
+  254  git checkout google
+  255  ls
+  256  echo fourth line >> file.txt
+  257  git add .
+  258  git commit -m 4th line added
+  259  git log file.txt
+  260  git branch -l
+  261  git cheackout master
+  262  git checkout master
+  263  ls -l
+  264  git diff master
+  265  git diff google
+  266  git merge google
+  267  ls -l
+  268  cat file
+  269  cat file.txt
+  270  git log file.txt
+  271  clear
+  272  git diff google
+  273  git branch -l
+  274  git checkout google
+  275  git branch -l
+  276  git tag google_tag
+  277  git tag -l
+  278  git checkout master
+  279  git branch -l
+  280  git branch -D google
+  281  git branch -l
+  282  git tag -l
+  283  git checkout google_tag
+  284  git branch -l
+  285  git branch google
+  286  git branch -l
+  287  git checkout google
+  288  git branch -l
+  289  ls -l
+  290  ls
+  291  clear
+  292  history
+  293  git remote -v
+  294  git remote add origin https://github.com/sudhi315/gitrepo.git
+  295  git remote -v
+  296  git push origin master
+  297  git push --all
+  298  git push google_tag
+  299  git tag -l
+  300  git push origin google_tag
+  301  git push origin master
+  302  git branch -l
+  303  git checkout master
+  304  git branch -l
+  305  git pull origin master
+  306  git branch -l 
